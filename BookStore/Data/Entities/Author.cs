@@ -22,5 +22,12 @@ namespace BookStore.Data.Entities
         public int InsertedUserId { get; set; }
         public int UpdatedUserId { get; set; }
         public List<Book> Books { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return this.Name + " " + this.Surname;
+            }
+        }
     }
 }

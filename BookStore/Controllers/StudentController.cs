@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BookStore.Data.Entities;
+using BookStore.Data.EntityFramework;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,6 +13,5 @@ namespace BookStore.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-
     }
 }

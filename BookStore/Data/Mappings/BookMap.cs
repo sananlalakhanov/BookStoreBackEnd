@@ -15,6 +15,7 @@ namespace BookStore.Data.Mappings
             builder.ToTable("BOOKS");
             builder.HasKey(b => b.Id);
             builder.Property(b => b.Name).IsRequired().HasColumnName("NAME").HasMaxLength(100);
+            builder.Property(b => b.Status).HasColumnName("STATUS").HasColumnType("int");
             builder.Property(b => b.InsertedDate).HasColumnType("date").HasColumnName("INSERTED_DATE");
             builder.Property(b => b.InsertedUserId).HasColumnName("INSERTED_USER_ID").HasColumnType("int");
             builder.Property(b => b.UpdatedDate).HasColumnType("date").HasColumnName("UPDATED_DATE");

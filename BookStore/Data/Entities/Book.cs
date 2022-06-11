@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookStore.Data.Entities.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace BookStore.Data.Entities
         public string Description { get; set; }
         public DateTime InsertedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
+        public BookStatus Status { get; set; }
         public int InsertedUserId { get; set; }
         public int UpdatedUserId { get; set; }
         public int CategoryId { get; set; }
